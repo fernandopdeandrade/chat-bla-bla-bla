@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/chat.css" />
+    <title>Socket.IO</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Chat Bla-Bla-Bla</h1>
+      <span>Digite seu nome de usuário aqui</span>
+      <input
+        autocomplete="off"
+        type="text"
+        id="nameInput"
+        placeholder="Nome..."
+      />
+    </header>
+
+    <div class="mensagens-usuarios">
+      <img src="./images/bla-bla-bla.png" alt="imagem-conversa" />
+      <ul id="mensagens"></ul>
+    </div>
+
+    <main>
+      <form id="form" action="">
+        <input
+          autocomplete="off"
+          type="text"
+          id="mensagemInput"
+          placeholder="Mensagen..."
+        />
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/home.js"></script>
+</html>
