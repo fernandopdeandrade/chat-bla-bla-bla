@@ -38,6 +38,10 @@ Agora abra seu navegador em = http://localhost:5000
 
 </details>
 
+<strong>👨‍💻 Imagem do projeto rodando localmente!</strong>
+<p>Não esqueça de abrir várias abas para simular uma conversa,
+e também de inserir o nome de usuário para que ele apareça antes da mensagem! 🍛</p>
+  
 ![projeto-rodando](public/images/app-rodando.png)
 
 
