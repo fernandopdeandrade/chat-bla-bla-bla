@@ -3,7 +3,6 @@ Chat usando socket.io, nodejs, express, html, css e javascript
 
 <details>
   <summary><strong>👨‍💻 Habilidades!</strong></summary>
-    <p>Faça o clone do repositório 🍛</p>
 
 🚵 Habilidades exercitadas: </br>
 
@@ -18,6 +17,7 @@ Chat usando socket.io, nodejs, express, html, css e javascript
 <details>
   <summary>
     <b>👀 Como instalar as dependências e rodar a aplicação?</b>
+        <p>Faça o clone do repositório 🍛</p>
   </summary>
 
 Instale as dependências com o comando:
