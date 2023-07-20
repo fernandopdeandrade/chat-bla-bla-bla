@@ -1,4 +1,4 @@
-const socket = io();
+const socket = window.io();
 const form = document.getElementById("form");
 const inputMessage = document.getElementById("mensagemInput");
 const inputName = document.getElementById("nameInput");

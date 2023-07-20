@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http").createServer(app);
 const cors = require("cors");
+const path = require("path");
 
 const io = require("socket.io")(http, {
   cors: {
@@ -10,13 +11,13 @@ const io = require("socket.io")(http, {
   },
 });
 
-app.use(cors());
-app.use(express.static(__dirname + "/public"));
+require("./public/models/connect.js")(io);
 
-require("./sockets/connect.js")(io);
+app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (_req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 http.listen(5000, () => {
