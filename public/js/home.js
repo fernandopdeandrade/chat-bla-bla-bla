@@ -6,6 +6,14 @@ const inputName = document.getElementById("nameInput");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  if (!inputName.value) {
+    alert("Digite seu nome para iniciar a conversa");
+    return false;
+  } else if (!inputMessage.value) {
+    alert("Digite uma mensagem");
+    return false;
+  }
+
   socket.emit("mensagem", `${inputName.value} disse: ${inputMessage.value}`);
 
   inputMessage.value = "";

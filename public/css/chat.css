@@ -94,6 +94,7 @@ form button:active {
   bottom: 100px;
   padding: 20px;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .mensagens-usuarios img {
@@ -102,22 +103,29 @@ form button:active {
   height: 100px;
   margin-bottom: 10px;
   align-items: center;
+  border-radius: 5px;
 }
 
 #mensagens {
   list-style-type: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 #mensagens li {
-  overflow: auto;
+  word-wrap: break-word;
   padding: 5px 10px;
   color: white;
   background-color: rgb(42, 75, 87);
+  margin-bottom: 10px;
 }
 
 #mensagens li:nth-child(odd) {
   background: #eee;
   color: black;
+  margin-bottom: 10px;
+  padding: 5px 10px;
 }
